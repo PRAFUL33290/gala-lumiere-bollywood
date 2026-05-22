@@ -71,7 +71,7 @@ const lightingData = {
     "meta": {
       "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
       "LIEU:": "LA COUPOLE ST LOUBES",
-      "TITRE :": "Le rêve du présent",
+      "TITRE :": "1.5 Le rêve du présent",
       "CHOREGRAPHE :": "JULIEN",
       "INTERPRETES:": "16 danseurs adultes + JULIEN",
       "MUSIQUE:": "Boom Padi",
@@ -169,7 +169,7 @@ const lightingData = {
     "meta": {
       "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
       "LIEU:": "LA COUPOLE ST LOUBES",
-      "TITRE :": "Le rêve de l'énergie",
+      "TITRE :": "1.9 Le rêve de l'énergie",
       "CHOREGRAPHE :": "JULIEN",
       "INTERPRETES:": "21 danseurs adultes avec JULIEN",
       "MUSIQUE:": "Bollywood Masala",
@@ -281,7 +281,7 @@ const lightingData = {
     "meta": {
       "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
       "LIEU:": "LA COUPOLE ST LOUBES",
-      "TITRE :": "Le rêve du métissage INDE/AFRIQUE",
+      "TITRE :": "2.7 Le rêve du métissage INDE/AFRIQUE",
       "CHOREGRAPHE :": "JULIEN",
       "INTERPRETES:": "16 danseurs ados",
       "MUSIQUE:": "Oh Mama Tetema",
@@ -393,7 +393,7 @@ const lightingData = {
     "meta": {
       "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
       "LIEU:": "LA COUPOLE ST LOUBES",
-      "TITRE :": "Le rêve des origines",
+      "TITRE :": "2.9 Le rêve des origines",
       "CHOREGRAPHE :": "JULIEN",
       "INTERPRETES:": "18 danseurs enfants",
       "MUSIQUE:": "Uyi Amma",
@@ -505,7 +505,7 @@ const lightingData = {
     "meta": {
       "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
       "LIEU:": "LA COUPOLE ST LOUBES",
-      "TITRE :": "Le rêve du bonheur simple",
+      "TITRE :": "2.14 Le rêve du bonheur simple",
       "CHOREGRAPHE :": "JULIEN",
       "INTERPRETES:": "71 danseurs",
       "MUSIQUE:": "Medley Bollywood",
