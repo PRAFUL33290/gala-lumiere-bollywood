@@ -1,0 +1,141 @@
+/* Background animé néon / blur pour le spectacle */
+:root {
+    --neon-a: #8a2be2;
+    --neon-b: #ff2e88;
+    --neon-c: #ffffff;
+    --neon-title: rgba(138, 43, 226, 0.38);
+}
+
+html {
+    background: #03020a;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 20% 15%, color-mix(in srgb, var(--neon-a) 55%, transparent), transparent 32%),
+        radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--neon-b) 45%, transparent), transparent 35%),
+        radial-gradient(circle at 50% 90%, color-mix(in srgb, var(--neon-c) 24%, transparent), transparent 28%),
+        linear-gradient(135deg, #03020a 0%, #08030f 45%, #000 100%);
+    background-size: 150% 150%;
+    animation: stageGradient 15s ease-in-out infinite alternate;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: -18vmax;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.75;
+    filter: blur(58px) saturate(1.55);
+    mix-blend-mode: screen;
+}
+
+body::before {
+    background:
+        radial-gradient(circle at 15% 35%, var(--neon-a), transparent 25%),
+        radial-gradient(circle at 84% 26%, var(--neon-b), transparent 24%),
+        radial-gradient(circle at 50% 76%, var(--neon-c), transparent 22%);
+    animation: floatingNeon 18s ease-in-out infinite alternate;
+}
+
+body::after {
+    opacity: 0.34;
+    filter: blur(28px) saturate(1.8);
+    background:
+        repeating-linear-gradient(115deg, transparent 0 38px, color-mix(in srgb, var(--neon-a) 36%, transparent) 39px 42px, transparent 43px 88px),
+        repeating-linear-gradient(65deg, transparent 0 55px, color-mix(in srgb, var(--neon-b) 30%, transparent) 56px 59px, transparent 60px 110px);
+    animation: laserSweep 12s linear infinite;
+}
+
+header,
+#menu,
+#main-content,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background:
+        linear-gradient(135deg, color-mix(in srgb, var(--neon-a) 70%, #000), color-mix(in srgb, var(--neon-b) 65%, #000));
+    box-shadow: 0 0 34px var(--neon-title), inset 0 -1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.section {
+    background: rgba(10, 10, 18, 0.78);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 34px rgba(0, 0, 0, 0.55), 0 0 28px color-mix(in srgb, var(--neon-a) 22%, transparent);
+}
+
+.section h2 {
+    background:
+        linear-gradient(120deg, color-mix(in srgb, var(--neon-a) 78%, #050505), color-mix(in srgb, var(--neon-b) 70%, #050505));
+    box-shadow: 0 0 24px color-mix(in srgb, var(--neon-a) 35%, transparent);
+}
+
+#menu button.active {
+    background:
+        linear-gradient(135deg, color-mix(in srgb, var(--neon-a) 75%, #111), color-mix(in srgb, var(--neon-b) 70%, #111));
+    border-color: color-mix(in srgb, var(--neon-c) 70%, var(--neon-a));
+    box-shadow: 0 0 18px color-mix(in srgb, var(--neon-a) 50%, transparent), inset 0 0 10px rgba(255, 255, 255, 0.16);
+}
+
+/* Ambiance automatique selon le tableau sélectionné */
+body:has(#menu button:nth-child(1).active) {
+    --neon-a: #8a2be2;
+    --neon-b: #d946ef;
+    --neon-c: #ffffff;
+}
+
+body:has(#menu button:nth-child(2).active) {
+    --neon-a: #ff1f4f;
+    --neon-b: #ff7a18;
+    --neon-c: #ffd166;
+}
+
+body:has(#menu button:nth-child(3).active) {
+    --neon-a: #ffd000;
+    --neon-b: #ff7a00;
+    --neon-c: #ffffff;
+}
+
+body:has(#menu button:nth-child(4).active) {
+    --neon-a: #00ff7f;
+    --neon-b: #21d07a;
+    --neon-c: #a7ffcf;
+}
+
+body:has(#menu button:nth-child(5).active) {
+    --neon-a: #8a2be2;
+    --neon-b: #ff2e2e;
+    --neon-c: #ffd700;
+}
+
+@keyframes stageGradient {
+    0% { background-position: 0% 40%; }
+    100% { background-position: 100% 60%; }
+}
+
+@keyframes floatingNeon {
+    0% { transform: translate3d(-3%, -2%, 0) scale(1) rotate(0deg); }
+    50% { transform: translate3d(4%, 3%, 0) scale(1.08) rotate(8deg); }
+    100% { transform: translate3d(8%, -4%, 0) scale(1.16) rotate(-6deg); }
+}
+
+@keyframes laserSweep {
+    from { transform: translate3d(-4%, 0, 0) rotate(0deg); }
+    to { transform: translate3d(4%, 0, 0) rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body,
+    body::before,
+    body::after {
+        animation: none;
+    }
+}
