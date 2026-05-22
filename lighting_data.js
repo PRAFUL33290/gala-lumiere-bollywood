@@ -1,0 +1,731 @@
+const lightingData = {
+  "P1.5": {
+    "meta": {
+      "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
+      "LIEU:": "LA COUPOLE ST LOUBES",
+      "TITRE :": "Le rêve du présent",
+      "CHOREGRAPHE :": "JULIEN",
+      "INTERPRETES:": "16 danseurs adultes + JULIEN",
+      "MUSIQUE:": "Boom Padi",
+      "COSTUMES:": "Robe violette + legging",
+      "DECORS/ ACCESSOIRES:": "PHOTO ECRAN"
+    },
+    "cues": [
+      {
+        "no": "1",
+        "scene": "Intro",
+        "dancers": "17 danseurs en placement",
+        "light": "Wash violet fixe",
+        "duration": "00:00 → 00:13"
+      },
+      {
+        "no": "2",
+        "scene": "Couplet 1",
+        "dancers": "Formation principale",
+        "light": "Wash violet fixe",
+        "duration": "00:13 → 00:51"
+      },
+      {
+        "no": "3",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:51:00"
+      },
+      {
+        "no": "4",
+        "scene": "Refrain 1",
+        "dancers": "Ouverture chorégraphie",
+        "light": "Wash violet fixe",
+        "duration": "00:52 → 01:23"
+      },
+      {
+        "no": "5",
+        "scene": "Pont 1",
+        "dancers": "Passage cinématographique",
+        "light": "Wash violet fixe",
+        "duration": "01:23 → 01:51"
+      },
+      {
+        "no": "6",
+        "scene": "Couplet 2",
+        "dancers": "Retour formation principale",
+        "light": "Wash violet fixe",
+        "duration": "01:51 → 02:18"
+      },
+      {
+        "no": "7",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:19:00"
+      },
+      {
+        "no": "8",
+        "scene": "Refrain 2",
+        "dancers": "Partie festive",
+        "light": "Wash violet fixe",
+        "duration": "02:20 → 02:49"
+      },
+      {
+        "no": "9",
+        "scene": "Pont 2",
+        "dancers": "Passage sombre cinéma",
+        "light": "Wash violet fixe",
+        "duration": "02:50 → 03:14"
+      },
+      {
+        "no": "10",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "03:15:00"
+      },
+      {
+        "no": "11",
+        "scene": "Refrain 3",
+        "dancers": "Final chorégraphique",
+        "light": "Plein feu violet",
+        "duration": "03:16 → 03:45"
+      },
+      {
+        "no": "12",
+        "scene": "Final",
+        "dancers": "Tableau final",
+        "light": "Plein feu violet",
+        "duration": "03:45 → 04:05"
+      }
+    ]
+  },
+  "P1.9": {
+    "meta": {
+      "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
+      "LIEU:": "LA COUPOLE ST LOUBES",
+      "TITRE :": "Le rêve de l'énergie",
+      "CHOREGRAPHE :": "JULIEN",
+      "INTERPRETES:": "21 danseurs adultes avec JULIEN",
+      "MUSIQUE:": "Bollywood Masala",
+      "COSTUMES:": "Pantalon voile rouge + débardeur doré",
+      "DECORS/ ACCESSOIRES:": "PHOTO ECRAN"
+    },
+    "cues": [
+      {
+        "no": "1",
+        "scene": "Intro sans rythme",
+        "dancers": "22 danseurs en placement",
+        "light": "Wash rouge fixe",
+        "duration": "00:00 → 00:17"
+      },
+      {
+        "no": "2",
+        "scene": "Intro rythmée",
+        "dancers": "Début énergie Bollywood",
+        "light": "Wash rouge fixe",
+        "duration": "00:17 → 00:24"
+      },
+      {
+        "no": "3",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:26:00"
+      },
+      {
+        "no": "4",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:29:00"
+      },
+      {
+        "no": "5",
+        "scene": "Intro rythmée",
+        "dancers": "Montée énergie",
+        "light": "Wash rouge fixe",
+        "duration": "00:26 → 00:32"
+      },
+      {
+        "no": "6",
+        "scene": "Couplet 1",
+        "dancers": "Formation principale",
+        "light": "Wash rouge fixe",
+        "duration": "00:32 → 00:54"
+      },
+      {
+        "no": "7",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:55:00"
+      },
+      {
+        "no": "8",
+        "scene": "Refrain 1",
+        "dancers": "Ouverture chorégraphique",
+        "light": "Wash rouge fixe",
+        "duration": "00:56 → 01:19"
+      },
+      {
+        "no": "9",
+        "scene": "Instrumental",
+        "dancers": "Passage rythmique",
+        "light": "Wash rouge fixe",
+        "duration": "01:20 → 01:31"
+      },
+      {
+        "no": "10",
+        "scene": "Couplet 2",
+        "dancers": "Retour formation principale",
+        "light": "Wash rouge fixe",
+        "duration": "01:33 → 02:06"
+      },
+      {
+        "no": "11",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:07:00"
+      },
+      {
+        "no": "12",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:09:00"
+      },
+      {
+        "no": "13",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:11:00"
+      },
+      {
+        "no": "14",
+        "scene": "Instrumental",
+        "dancers": "Montée explosive",
+        "light": "Wash rouge fixe",
+        "duration": "02:12 → 02:20"
+      },
+      {
+        "no": "15",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:21:00"
+      },
+      {
+        "no": "16",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:24:00"
+      },
+      {
+        "no": "17",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:25:00"
+      },
+      {
+        "no": "18",
+        "scene": "Refrain 2",
+        "dancers": "Partie festive",
+        "light": "Wash rouge fixe",
+        "duration": "02:27 → 02:46"
+      },
+      {
+        "no": "19",
+        "scene": "Instrumental dynamique",
+        "dancers": "Séquence explosive",
+        "light": "Wash rouge fixe",
+        "duration": "02:46 → 02:59"
+      },
+      {
+        "no": "20",
+        "scene": "Temps fort",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "03:00:00"
+      },
+      {
+        "no": "21",
+        "scene": "Temps fort",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "03:02:00"
+      },
+      {
+        "no": "22",
+        "scene": "Instrumental",
+        "dancers": "Explosion énergie",
+        "light": "Wash rouge fixe",
+        "duration": "03:02 → 03:25"
+      },
+      {
+        "no": "23",
+        "scene": "Refrain 3",
+        "dancers": "Final chorégraphique",
+        "light": "Wash rouge fixe",
+        "duration": "03:26 → 03:50"
+      },
+      {
+        "no": "24",
+        "scene": "Final",
+        "dancers": "Tableau final",
+        "light": "Plein feu rouge",
+        "duration": "03:51 → 04:06"
+      },
+      {
+        "no": "INSTRUCTIONS RÉGIE",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      },
+      {
+        "no": "1. NOIR DE SCÈNE COMPLET",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      },
+      {
+        "no": "2. LANCEZ LE SON + LE PROJECTEUR EN MÊME TEMPS (CAR SYNCRO, SI PAS POSSIBLE, JE POSSÈDE LA VIDÉO AVEC LE SON)",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      },
+      {
+        "no": "3. LA FIN DE MES MORCEAUX SE FAIT TOUJOURS DANS LE NOIR — LE NOIR ARRIVE APRÈS LA PAUSE DE FIN",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      }
+    ]
+  },
+  "P2.7": {
+    "meta": {
+      "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
+      "LIEU:": "LA COUPOLE ST LOUBES",
+      "TITRE :": "Le rêve du métissage INDE/AFRIQUE",
+      "CHOREGRAPHE :": "JULIEN",
+      "INTERPRETES:": "16 danseurs ados",
+      "MUSIQUE:": "Oh Mama Tetema",
+      "COSTUMES:": "Robe longue jaune",
+      "DECORS/ ACCESSOIRES:": "PHOTO ECRAN"
+    },
+    "cues": [
+      {
+        "no": "1",
+        "scene": "Intro",
+        "dancers": "16 danseurs en placement",
+        "light": "Wash jaune/orange fixe",
+        "duration": "00:00 → 00:40"
+      },
+      {
+        "no": "2",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:31:00"
+      },
+      {
+        "no": "3",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:33:00"
+      },
+      {
+        "no": "4",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:36:00"
+      },
+      {
+        "no": "5",
+        "scene": "Temps fort",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "00:38:00"
+      },
+      {
+        "no": "6",
+        "scene": "Refrain 1",
+        "dancers": "Ouverture chorégraphique",
+        "light": "Wash jaune/orange fixe",
+        "duration": "00:40 → 00:59"
+      },
+      {
+        "no": "7",
+        "scene": "Couplet 1",
+        "dancers": "Formation principale",
+        "light": "Wash jaune/orange fixe",
+        "duration": "01:00 → 01:28"
+      },
+      {
+        "no": "8",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "01:16:00"
+      },
+      {
+        "no": "9",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "01:19:00"
+      },
+      {
+        "no": "10",
+        "scene": "Temps fort",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "01:26:00"
+      },
+      {
+        "no": "11",
+        "scene": "Refrain 2",
+        "dancers": "Partie festive",
+        "light": "Wash jaune/orange fixe",
+        "duration": "01:28 → 01:48"
+      },
+      {
+        "no": "12",
+        "scene": "Partie orientale",
+        "dancers": "Passage oriental",
+        "light": "Wash jaune/orange fixe",
+        "duration": "01:48 → 02:06"
+      },
+      {
+        "no": "13",
+        "scene": "Couplet 2",
+        "dancers": "Retour formation principale",
+        "light": "Wash jaune/orange fixe",
+        "duration": "02:06 → 02:26"
+      },
+      {
+        "no": "14",
+        "scene": "Pont",
+        "dancers": "Passage cinématographique",
+        "light": "Wash jaune/orange fixe",
+        "duration": "02:26 → 02:35"
+      },
+      {
+        "no": "15",
+        "scene": "Temps fort",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "02:33:00"
+      },
+      {
+        "no": "16",
+        "scene": "Refrain 3",
+        "dancers": "Final chorégraphique",
+        "light": "Wash jaune/orange fixe",
+        "duration": "02:36 → 03:13"
+      },
+      {
+        "no": "17",
+        "scene": "Freestyle groupes",
+        "dancers": "Passages groupes",
+        "light": "Wash jaune/orange fixe",
+        "duration": "03:13 → 04:16"
+      },
+      {
+        "no": "18",
+        "scene": "Pré-refrain",
+        "dancers": "Montée énergétique",
+        "light": "Wash jaune/orange fixe",
+        "duration": "04:16 → 04:25"
+      },
+      {
+        "no": "19",
+        "scene": "Final",
+        "dancers": "Tableau final",
+        "light": "Plein feu jaune/orange",
+        "duration": "04:25 → 05:05"
+      },
+      {
+        "no": "INSTRUCTIONS RÉGIE",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      },
+      {
+        "no": "1. NOIR DE SCÈNE COMPLET",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      },
+      {
+        "no": "2. LANCEZ LE SON + LE PROJECTEUR EN MÊME TEMPS (CAR SYNCRO, SI PAS POSSIBLE, JE POSSÈDE LA VIDÉO AVEC LE SON)",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      },
+      {
+        "no": "3. LA FIN DE MES MORCEAUX SE FAIT TOUJOURS DANS LE NOIR — LE NOIR ARRIVE APRÈS LA PAUSE DE FIN",
+        "scene": "",
+        "dancers": "",
+        "light": "",
+        "duration": ""
+      }
+    ]
+  },
+  "P2.9": {
+    "meta": {
+      "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
+      "LIEU:": "LA COUPOLE ST LOUBES",
+      "TITRE :": "Le rêve des origines",
+      "CHOREGRAPHE :": "JULIEN",
+      "INTERPRETES:": "18 danseurs enfants",
+      "MUSIQUE:": "Uyi Amma",
+      "COSTUMES:": "Robe verte style arabe",
+      "DECORS/ ACCESSOIRES:": "PHOTO ECRAN"
+    },
+    "cues": [
+      {
+        "no": "1",
+        "scene": "Intro",
+        "dancers": "18 danseurs en placement",
+        "light": "Wash vert fixe",
+        "duration": "00:00 → 00:21"
+      },
+      {
+        "no": "2",
+        "scene": "Instrumental",
+        "dancers": "Montée énergétique",
+        "light": "Wash vert fixe",
+        "duration": "00:21 → 00:32"
+      },
+      {
+        "no": "3",
+        "scene": "Couplet 1",
+        "dancers": "Formation principale",
+        "light": "Wash vert fixe",
+        "duration": "00:32 → 00:53"
+      },
+      {
+        "no": "4",
+        "scene": "Pré-refrain",
+        "dancers": "Montée progressive",
+        "light": "Wash vert fixe",
+        "duration": "00:53 → 01:04"
+      },
+      {
+        "no": "5",
+        "scene": "Refrain 1",
+        "dancers": "Ouverture chorégraphique",
+        "light": "Wash vert fixe",
+        "duration": "01:04 → 01:47"
+      },
+      {
+        "no": "6",
+        "scene": "Pré-refrain",
+        "dancers": "Passage énergétique",
+        "light": "Wash vert fixe",
+        "duration": "01:17 → 01:57"
+      },
+      {
+        "no": "7",
+        "scene": "Refrain 2",
+        "dancers": "Partie festive",
+        "light": "Wash vert fixe",
+        "duration": "01:57 → 02:08"
+      },
+      {
+        "no": "8",
+        "scene": "Instrumental",
+        "dancers": "Passage rythmique",
+        "light": "Wash vert fixe",
+        "duration": "02:08 → 02:19"
+      },
+      {
+        "no": "9",
+        "scene": "Couplet 2",
+        "dancers": "Retour formation principale",
+        "light": "Wash vert fixe",
+        "duration": "02:20 → 02:53"
+      },
+      {
+        "no": "10",
+        "scene": "Temps fort",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "02:53:00"
+      },
+      {
+        "no": "11",
+        "scene": "Pré-refrain",
+        "dancers": "Montée énergétique",
+        "light": "Wash vert fixe",
+        "duration": "02:53 → 03:04"
+      },
+      {
+        "no": "12",
+        "scene": "Temps fort",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "02:56:00"
+      },
+      {
+        "no": "13",
+        "scene": "Refrain 3",
+        "dancers": "Final chorégraphique",
+        "light": "Wash vert fixe",
+        "duration": "03:04 → 03:47"
+      },
+      {
+        "no": "14",
+        "scene": "Final",
+        "dancers": "Tableau final",
+        "light": "Plein feu vert",
+        "duration": "03:47 → 04:09"
+      }
+    ]
+  },
+  "P2.14": {
+    "meta": {
+      "DATE DE PRESENTATION:": "2026-05-24 00:00:00",
+      "LIEU:": "LA COUPOLE ST LOUBES",
+      "TITRE :": "Le rêve du bonheur simple",
+      "CHOREGRAPHE :": "JULIEN",
+      "INTERPRETES:": "71 danseurs",
+      "MUSIQUE:": "Medley Bollywood",
+      "COSTUMES:": "Tenues Bollywood",
+      "DECORS/ ACCESSOIRES:": "PHOTO ECRAN"
+    },
+    "cues": [
+      {
+        "no": "1",
+        "scene": "Intro",
+        "dancers": "71 danseurs en placement",
+        "light": "Wash violet + vert",
+        "duration": "00:00 → 00:25"
+      },
+      {
+        "no": "2",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:25:00"
+      },
+      {
+        "no": "3",
+        "scene": "Satikali",
+        "dancers": "Ouverture Bollywood",
+        "light": "Wash violet + vert",
+        "duration": "00:25 → 01:28"
+      },
+      {
+        "no": "4",
+        "scene": "Accent musical",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "00:32:00"
+      },
+      {
+        "no": "5",
+        "scene": "Montée en pression",
+        "dancers": "Montée énergétique",
+        "light": "Wash violet + vert",
+        "duration": "01:00 → 01:07"
+      },
+      {
+        "no": "6",
+        "scene": "Montée en pression",
+        "dancers": "Passage dynamique",
+        "light": "Wash violet + vert",
+        "duration": "01:20 → 01:28"
+      },
+      {
+        "no": "7",
+        "scene": "Bollywood Masala 1",
+        "dancers": "Partie explosive",
+        "light": "Wash rouge + jaune",
+        "duration": "01:28 → 02:28"
+      },
+      {
+        "no": "8",
+        "scene": "Effet stroboscope",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:02 → 02:03"
+      },
+      {
+        "no": "9",
+        "scene": "Effet stroboscope",
+        "dancers": "Impact musical",
+        "light": "Flash blanc court",
+        "duration": "02:08 → 02:09"
+      },
+      {
+        "no": "10",
+        "scene": "Transition Remix",
+        "dancers": "Transition générale",
+        "light": "Wash violet + vert",
+        "duration": "02:28 → 02:44"
+      },
+      {
+        "no": "11",
+        "scene": "Bollywood Masala 2 Remix",
+        "dancers": "Partie finale explosive",
+        "light": "Wash rouge + jaune",
+        "duration": "02:44 → 03:51"
+      },
+      {
+        "no": "12",
+        "scene": "Montée en pression",
+        "dancers": "Montée maximale",
+        "light": "Wash rouge + jaune",
+        "duration": "02:57 → 03:10"
+      },
+      {
+        "no": "13",
+        "scene": "Impact violent",
+        "dancers": "Impact majeur",
+        "light": "Flash blanc court",
+        "duration": "03:38:00"
+      },
+      {
+        "no": "14",
+        "scene": "Ambiance maximum",
+        "dancers": "Explosion finale énergie",
+        "light": "Wash rouge + jaune",
+        "duration": "03:38 → 03:51"
+      },
+      {
+        "no": "15",
+        "scene": "Temps dramatique",
+        "dancers": "Passage cinématographique",
+        "light": "Ambiance sombre cinématographique",
+        "duration": "03:51 → 04:44"
+      },
+      {
+        "no": "16",
+        "scene": "Cascade",
+        "dancers": "Passage spectaculaire",
+        "light": "Ambiance multicolore spectaculaire",
+        "duration": "04:44 → 05:25"
+      },
+      {
+        "no": "17",
+        "scene": "Final",
+        "dancers": "Tableau final",
+        "light": "Plein feu rouge + jaune",
+        "duration": "05:26 → 07:30"
+      }
+    ]
+  }
+};
+export default lightingData;
