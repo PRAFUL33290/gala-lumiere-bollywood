@@ -2,17 +2,17 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f8f8f8;
-    color: #333;
+    background: #000;
+    color: #e0e0e0;
     line-height: 1.5;
 }
 
 header {
-    background: linear-gradient(135deg, #ff6f61, #e66465);
+    background: linear-gradient(135deg, #c0392b, #922b21);
     color: #fff;
     padding: 2rem 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 h1 {
@@ -31,53 +31,60 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
+    gap: 0.4rem;
+    background: #111;
+    border-bottom: 1px solid #333;
+    padding: 0.5rem 0.75rem;
 }
 
 #menu button {
     appearance: none;
-    background: none;
-    border: none;
-    padding: 1rem 1.5rem;
+    background: #1e1e1e;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
     cursor: pointer;
-    font-size: 1rem;
-    color: #333;
-    transition: background 0.3s, color 0.3s;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
 #menu button:hover,
 #menu button.active {
-    background: #ff6f61;
+    background: #c0392b;
     color: #fff;
+    border-color: #c0392b;
 }
 
 /* Main content */
 #main-content {
-    padding: 2rem;
+    padding: 1.5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .section {
-    margin-bottom: 3rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2.5rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #111;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 .section h2 {
     margin: 0;
     padding: 1rem;
-    background: #e66465;
+    background: #922b21;
     color: #fff;
-    font-size: 1.5rem;
-    border-radius: 5px 5px 0 0;
+    font-size: 1.4rem;
 }
 
 .metadata {
     padding: 1rem;
-    border-bottom: 1px solid #ddd;
-    background: #fafafa;
+    border-bottom: 1px solid #333;
+    background: #161616;
 }
 
 .metadata dl {
@@ -89,32 +96,51 @@ h1 {
 .metadata dt {
     flex-basis: 30%;
     font-weight: bold;
+    color: #bbb;
 }
 
 .metadata dd {
     flex-basis: 70%;
     margin: 0 0 0.5rem;
+    color: #e0e0e0;
+}
+
+/* Responsive table wrapper */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
+    min-width: 500px;
 }
 
 th, td {
     padding: 0.75rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #2a2a2a;
     text-align: left;
 }
 
 th {
-    background: #f0f0f0;
+    background: #1e1e1e;
+    color: #ff6f61;
     font-weight: bold;
 }
 
 tr:nth-child(even) td {
-    background: #fafafa;
+    background: #161616;
+}
+
+tr:nth-child(odd) td {
+    background: #111;
+}
+
+tr:hover td {
+    background: #1e1e1e;
 }
 
 .light-cell {
@@ -128,12 +154,109 @@ tr:nth-child(even) td {
     margin-right: 8px;
     border-radius: 3px;
     flex-shrink: 0;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    color: #777;
+    color: #555;
+    background: #0a0a0a;
+    border-top: 1px solid #222;
+}
+
+/* ── Responsive: Tablette (≤768px) ── */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    #menu {
+        gap: 0.3rem;
+        padding: 0.4rem 0.5rem;
+    }
+
+    #menu button {
+        font-size: 0.85rem;
+        padding: 0.5rem 0.9rem;
+    }
+
+    #main-content {
+        padding: 1rem 0.75rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+
+    .metadata dt {
+        flex-basis: 40%;
+    }
+
+    .metadata dd {
+        flex-basis: 60%;
+    }
+
+    th, td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ── Responsive: Mobile (≤480px) ── */
+@media (max-width: 480px) {
+    header {
+        padding: 1.25rem 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    #menu button {
+        font-size: 0.8rem;
+        padding: 0.45rem 0.75rem;
+        border-radius: 5px;
+    }
+
+    #main-content {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .section {
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.1rem;
+        padding: 0.75rem;
+    }
+
+    .metadata {
+        padding: 0.75rem;
+    }
+
+    .metadata dt,
+    .metadata dd {
+        flex-basis: 100%;
+    }
+
+    .metadata dd {
+        margin-bottom: 0.75rem;
+    }
+
+    th, td {
+        padding: 0.5rem 0.4rem;
+        font-size: 0.82rem;
+    }
 }

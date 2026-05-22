@@ -691,7 +691,10 @@ document.addEventListener('DOMContentLoaded', () => {
         tbody.appendChild(tr);
       });
       table.appendChild(tbody);
-      section.appendChild(table);
+      const tableWrapper = document.createElement('div');
+      tableWrapper.className = 'table-wrapper';
+      tableWrapper.appendChild(table);
+      section.appendChild(tableWrapper);
       // Hide section by default except first
       if (index !== 0) {
         section.style.display = 'none';
